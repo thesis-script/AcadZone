@@ -13,7 +13,7 @@ export default function ContactPage() {
   };
 
   const contactInfo = [
-    { icon: MapPin, label: t("contact.address"), value: "الجزائر، سطيف" },
+    { icon: MapPin, label: t("contact.address"), value: "الجزائر، سوق أهراس" },
     { icon: Phone, label: "الهاتف", value: t("contact.phone") },
     { icon: Mail, label: "البريد", value: t("contact.emailAddr") },
   ];
