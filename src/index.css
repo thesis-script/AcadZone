@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #6C63FF;
+  --secondary: #4A90E2;
+  --dark: #1E1E2F;
+  --light: #F5F7FB;
+  --text: #333333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Kufi Arabic", "DM Sans", sans-serif;
+  color: var(--text);
+  background: var(--light);
+  margin: 0;
+}
+
+html[lang="ar"], html[dir="rtl"] {
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+html[lang="en"], html[lang="fr"] {
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #6C63FF44;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6C63FF;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, #6C63FF, #4A90E2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
